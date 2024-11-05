@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
-    "@react-navigation/native": "7.0.0-rc.21",
     "@react-navigation/bottom-tabs": "7.0.0-rc.36",
+    "@react-navigation/native": "7.0.0-rc.21",
     "expo": "~52.0.0-preview.19",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.2",
@@ -50,5 +50,6 @@
     "react-test-renderer": "18.3.1",
     "typescript": "^5.3.3"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@4.5.1"
 }
