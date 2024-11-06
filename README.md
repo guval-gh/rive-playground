@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# Playground for Rive
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Just a little playground to make some tests with Rive.
 
-## Get started
+- [Environment](#environment)
+- [Issues](#issues)
+- [Feature](#feature)
+- [Helpers](#helpers)
+  - [Handle .RIV assets with expo-custom-assets](#handle-riv-assets-with-expo-custom-assets)
 
-1. Install dependencies
+## Environment
 
-   ```bash
-   npm install
-   ```
+- Expo: ~52.0.0-preview.13
+- React Native: 0.76.1
+- Yarn: 4.5.1
+- Rive: 7.2.0
 
-2. Start the app
+⚠️ For the moment, there are some issues with the package `rive-react-native` on the `8.0.0` so I keep using the `7.2.0`.
 
-   ```bash
-    npx expo start
-   ```
+## Issues
 
-In the output, you'll find options to open the app in a
+- https://github.com/rive-app/rive-react-native/issues/272
+- https://github.com/rive-app/rive-react-native/issues/268
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Feature
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+[Assets Loader](https://rive.app/community/doc/loading-assets/doct4wVHGPgC#handling-assets) needed for RN
 
-## Get a fresh project
+- https://github.com/rive-app/rive-react-native/issues/271
+- https://github.com/rive-app/rive-react-native/issues/236
 
-When you're ready, run:
+## Helpers
+
+### Handle .RIV assets with `expo-custom-assets`
+
+To automatically load `.riv` files inside native folders without pass by `Xcode` and `Android Studio` then use `<Rive />` `resourceName` property to load assets from them.
+
+1. Install [expo-custom-assets](https://github.com/Malaa-tech/expo-custom-assets) module:
 
 ```bash
-npm run reset-project
+yarn add expo-custom-assets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Add animations `.riv` in a specific folder (ex: `./assets/animations`):
 
-## Learn more
+3. Modify the `app.json` config:
 
-To learn more about developing your project with Expo, look at the following resources:
+```json
+{
+  "expo": {
+    // ...
+    "plugins": [
+      // ...
+      [
+        "expo-custom-assets",
+        {
+          // Path to the folder with the animations
+          "assetsPaths": ["./assets/animations"]
+        }
+      ]
+    ]
+  }
+}
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Add automatically the `.riv` files in the native folders `ios` and `android`:
 
-## Join the community
+```bash
+# For both platforms
+npx expo prebuild
+# For a specific platform
+npx expo prebuild --platform ios
+npx expo prebuild --platform android
+```
 
-Join our community of developers creating universal apps.
+5. Use the `<Rive />` component with the `resourceName` property:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```tsx
+import Rive from "rive-react-native";
+
+<Rive resourceName="animation_name.riv" />;
+```
