@@ -3,13 +3,15 @@ import { useRef } from "react";
 
 import { StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
-import Rive, {
+import {
   Alignment,
   Fit,
   RNRiveError,
   RNRiveErrorType,
   RiveRef,
 } from "rive-react-native";
+
+import { RiveAnimation } from "@/components/RiveAnimation";
 
 const malformedFileUrl =
   "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg";
@@ -26,11 +28,11 @@ export default function Example6() {
 
   return (
     <>
-      <Rive
+      <RiveAnimation
         fit={Fit.Contain}
         alignment={Alignment.Center}
         style={styles.animation}
-        url={malformedFileUrl}
+        source={malformedFileUrl}
         // url={correctFileUrl}
         onError={(riveError: RNRiveError) => {
           switch (riveError.type) {

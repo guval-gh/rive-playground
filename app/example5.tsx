@@ -1,46 +1,50 @@
 import * as React from "react";
 
 import { StyleSheet, Text } from "react-native";
-import Rive, { Fit } from "rive-react-native";
+import { Fit } from "rive-react-native";
+
+import { RiveAnimation } from "@/components/RiveAnimation";
+
+import avatars from "@/assets/animations/avatars.riv";
 
 export default function Example5() {
   return (
     <>
       <Text>Avatar 1</Text>
-      <Rive
+      <RiveAnimation
         autoplay={true}
         style={styles.animation}
         fit={Fit.Contain}
         artboardName={"Avatar 1"}
         animationName={"idlePreview"}
-        resourceName={"avatars"}
+        source={avatars}
       />
 
       <Text>Avatar 2</Text>
-      <Rive
+      <RiveAnimation
         autoplay={true}
         style={styles.animation}
         fit={Fit.Contain}
         artboardName={"Avatar 2"}
-        resourceName={"avatars"}
+        source={avatars}
       />
 
       <Text>Avatar 3</Text>
-      <Rive
+      <RiveAnimation
         autoplay={true}
         style={styles.animation}
         fit={Fit.Contain}
         artboardName={"Avatar 3"}
-        resourceName={"avatars"}
+        source={avatars}
       />
 
       <Text>All Avatars</Text>
-      <Rive
+      <RiveAnimation
         autoplay={true}
         style={styles.animation}
         fit={Fit.Contain}
         artboardName={"All Avatars"}
-        resourceName={"avatars"}
+        source={avatars}
       />
     </>
   );

@@ -1,10 +1,13 @@
 import React from "react";
 import { useRef, useState } from "react";
 import { Pressable, View } from "react-native";
-import Rive, { Fit, RiveRef } from "rive-react-native";
+import { Fit, RiveRef } from "rive-react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-import { CustomButton } from "../components/Button";
+import { CustomButton } from "@/components/Button";
+
+import truckV7 from "@/assets/animations/truck_v7.riv";
+import { RiveAnimation } from "@/components/RiveAnimation";
 
 export default function Example1() {
   const riveRef = useRef<RiveRef>(null);
@@ -31,10 +34,10 @@ export default function Example1() {
 
   return (
     <>
-      <Rive
+      <RiveAnimation
         ref={riveRef}
         fit={Fit.FitWidth}
-        resourceName="truck_v7"
+        source={truckV7}
         animationName={animation}
         autoplay={true}
         onPlay={(animationName, isStateMachine) => {

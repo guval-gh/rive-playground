@@ -1,9 +1,12 @@
 import React from "react";
 import { useRef } from "react";
 import { View } from "react-native";
-import Rive, { Fit, RiveRef } from "rive-react-native";
+import { Fit, RiveRef } from "rive-react-native";
 
 import { CustomButton } from "@/components/Button";
+import { RiveAnimation } from "@/components/RiveAnimation";
+
+import uiSwipeLeftToDelete from "@/assets/animations/ui_swipe_left_to_delete.riv";
 
 export default function Example2() {
   const riveRef = useRef<RiveRef>(null);
@@ -14,10 +17,10 @@ export default function Example2() {
 
   return (
     <>
-      <Rive
+      <RiveAnimation
         ref={riveRef}
         fit={Fit.FitWidth}
-        resourceName="ui_swipe_left_to_delete"
+        source={uiSwipeLeftToDelete}
         stateMachineName="Swipe to delete"
         autoplay={true}
         onStateChanged={(stateName, isStateMachine) => {

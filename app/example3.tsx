@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { useRef } from "react";
 import { Text, View } from "react-native";
-import Rive, { Fit, RiveRef } from "rive-react-native";
+import { Fit, RiveRef } from "rive-react-native";
 import Slider from "@react-native-community/slider";
+
+import { RiveAnimation } from "@/components/RiveAnimation";
+
+import skillsListener from "@/assets/animations/skills_listener.riv";
 
 export default function Example3() {
   const riveRef = useRef<RiveRef>(null);
@@ -15,7 +19,7 @@ export default function Example3() {
 
   return (
     <>
-      <Rive
+      <RiveAnimation
         ref={riveRef}
         autoplay={true}
         fit={Fit.Cover}
@@ -37,7 +41,7 @@ export default function Example3() {
 
           setSelectedLevel(level);
         }}
-        resourceName={"skills_listener"}
+        source={skillsListener}
       />
 
       <View
