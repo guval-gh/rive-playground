@@ -41,7 +41,7 @@ To automatically load `.riv` files inside native folders without pass by `Xcode`
 yarn add expo-custom-assets
 ```
 
-2. Add animations `.riv` in a specific folder (ex: `./assets/animations`):
+2. Add animations `.riv` in a specific folder (ex: `./assets/animations`)
 
 3. Modify the `app.json` config:
 
@@ -79,4 +79,152 @@ npx expo prebuild --platform android
 import Rive from "rive-react-native";
 
 <Rive resourceName="animation_name.riv" />;
+```
+
+### Handle .RIV assets with `resolveAssetSource` custom config
+
+To automatically use `.riv` local files in custom wrapper component without the need to import them in the native folders.
+
+1. Modify the `metro.config.js` file:
+
+If the file doesn't exist, generate it with the command:
+
+```bash
+npx expo customize metro.config.js
+```
+
+Then update it:
+
+```js
+// Learn more https://docs.expo.io/guides/customizing-metro
+const { getDefaultConfig } = require("expo/metro-config");
+
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname);
+
+// ADD THIS LINE
+config.resolver.assetExts.push("riv");
+
+module.exports = config;
+```
+
+2. Add animations `.riv` in a specific folder (ex: `./assets/animations`)
+
+3. Add type declaration for `.riv` files:
+
+If you don't have any `types.d.ts` file, create it and add to it the following:
+
+```ts
+declare module "*.riv" {
+  const content: string;
+  export default content;
+}
+```
+
+Then update the `tsconfig.json` file to include the `types.d.ts` file:
+
+```json
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    // ...
+  },
+  "include": [
+    // ...
+    "path/to/your/types.d.ts"
+  ]
+}
+```
+
+4. Create a custom component to wrap the `<Rive />` component:
+
+Create a component `RiveAnimation` with the following content:
+
+Source for the base: https://github.com/rive-app/rive-react-native/issues/185#issuecomment-2322810427
+
+```tsx
+import React, { forwardRef, useMemo } from "react";
+import Rive, { RiveRef } from "rive-react-native";
+// @ts-ignore
+import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
+
+type RiveComponentProps = Omit<
+  React.ComponentProps<typeof Rive>,
+  "url" | "resourceName"
+> & {
+  source: string | number;
+};
+
+const isValidUrl = (uri: string | undefined): boolean => {
+  if (!uri) return false;
+  return uri.startsWith("http") || uri.startsWith("file");
+};
+
+export const RiveAnimation = forwardRef<RiveRef, RiveComponentProps>(
+  (props, ref) => {
+    const { source, ...riveProps } = props;
+
+    const riveConfig = useMemo(() => {
+      if (typeof source === "string" && isValidUrl(source)) {
+        return { url: source };
+      }
+
+      const resolved = resolveAssetSource(source);
+      const uri = resolved?.uri;
+      const isUrl = isValidUrl(uri);
+
+      return {
+        resourceName: !isUrl && uri ? uri : undefined,
+        url: isUrl ? uri : undefined,
+      };
+    }, [source]);
+
+    return <Rive ref={ref} {...riveProps} {...riveConfig} />;
+  }
+);
+```
+
+5. Use the `<RiveAnimation />` component instead of the `<Rive />` component:
+
+- with import:
+
+```tsx
+import React from "react";
+import { RiveAnimation } from "../components/RiveAnimation";
+
+import truckV7 from "../assets/animations/truck_v7.riv";
+
+export default function Playground() {
+  return <RiveAnimation source={truckV7} />;
+}
+```
+
+- with require:
+
+```tsx
+import React from "react";
+import { RiveAnimation } from "../components/RiveAnimation";
+
+export default function Playground() {
+  return (
+    <RiveAnimation source={require("../assets/animations/truck_v7.riv")} />
+  );
+}
+```
+
+- with remote url:
+
+```tsx
+import React from "react";
+import { RiveAnimation } from "../components/RiveAnimation";
+
+export default function Playground() {
+  return (
+    <RiveAnimation
+      source={
+        "https://public.uat.rive.app/community/runtime-files/148-325-tape.riv"
+      }
+    />
+  );
+}
 ```
