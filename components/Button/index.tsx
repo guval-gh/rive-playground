@@ -6,7 +6,11 @@ type ButtonProps = {
   isSelected?: boolean;
 };
 
-export const Button = ({ onPress, children, isSelected }: ButtonProps) => {
+export const CustomButton = ({
+  onPress,
+  children,
+  isSelected,
+}: ButtonProps) => {
   return (
     <Pressable
       onPress={onPress}
