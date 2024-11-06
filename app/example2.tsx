@@ -1,9 +1,9 @@
 import React from "react";
 import { useRef } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Rive, { Fit, RiveRef } from "rive-react-native";
 
-import { CustomButton } from "../../components/Button";
+import { CustomButton } from "@/components/Button";
 
 export default function Example2() {
   const riveRef = useRef<RiveRef>(null);
@@ -20,6 +20,14 @@ export default function Example2() {
         resourceName="ui_swipe_left_to_delete"
         stateMachineName="Swipe to delete"
         autoplay={true}
+        onStateChanged={(stateName, isStateMachine) => {
+          console.log(
+            "onStateChanged: ",
+            stateName,
+            "isStateMachine: ",
+            isStateMachine
+          );
+        }}
       />
       <View
         style={{
@@ -30,9 +38,7 @@ export default function Example2() {
         }}
       >
         <View style={{ flexDirection: "row", gap: 10 }}>
-          <CustomButton onPress={fireState}>
-            <Text>fireState</Text>
-          </CustomButton>
+          <CustomButton onPress={fireState} text="fireState" />
         </View>
       </View>
     </>

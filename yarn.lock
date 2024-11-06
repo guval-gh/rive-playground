@@ -2254,6 +2254,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/slider@npm:4.5.5":
+  version: 4.5.5
+  resolution: "@react-native-community/slider@npm:4.5.5"
+  checksum: 10c0/78c3364c072bbc82300612a625bced682b666145dce229e7beb87f93dde5f66a955e1cca4848f662f1a9d2246f26d4717ece5d4f86cd350a295db184c024002b
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:0.76.1":
   version: 0.76.1
   resolution: "@react-native/assets-registry@npm:0.76.1"
@@ -9135,6 +9142,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@expo/vector-icons": "npm:^14.0.2"
+    "@react-native-community/slider": "npm:4.5.5"
     "@react-navigation/bottom-tabs": "npm:7.0.0-rc.36"
     "@react-navigation/native": "npm:7.0.0-rc.21"
     "@types/jest": "npm:^29.5.12"

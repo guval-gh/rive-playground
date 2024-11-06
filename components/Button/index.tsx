@@ -1,16 +1,12 @@
-import { Pressable } from "react-native";
+import { Pressable, Text } from "react-native";
 
 type ButtonProps = {
   onPress: () => void;
-  children: React.ReactNode;
+  text: string;
   isSelected?: boolean;
 };
 
-export const CustomButton = ({
-  onPress,
-  children,
-  isSelected,
-}: ButtonProps) => {
+export const CustomButton = ({ onPress, text, isSelected }: ButtonProps) => {
   return (
     <Pressable
       onPress={onPress}
@@ -25,7 +21,7 @@ export const CustomButton = ({
         }),
       }}
     >
-      {children}
+      <Text>{text}</Text>
     </Pressable>
   );
 };

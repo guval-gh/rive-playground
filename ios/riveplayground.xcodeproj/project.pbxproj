@@ -19,6 +19,21 @@
 		AB08029153A24673A4977BA0 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C07FEB1C34BF0A4931CC4 /* noop-file.swift */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		62A8D90792C346D4BD556A45 /* FollowPathCar.riv in Resources */ = {isa = PBXBuildFile; fileRef = 136298407A0342D89C4DF656 /* FollowPathCar.riv */; };
+		502A355D11C84D6C8F85B422 /* artboard_animations.riv in Resources */ = {isa = PBXBuildFile; fileRef = F62D1E150E54428C945624F3 /* artboard_animations.riv */; };
+		AE55F34E97F84E5CA3B109E6 /* avatars.riv in Resources */ = {isa = PBXBuildFile; fileRef = D9A73683C3D747D884DBB25E /* avatars.riv */; };
+		F909A611F6614F9B88578BE6 /* bird.riv in Resources */ = {isa = PBXBuildFile; fileRef = 433832F8B7FD40FFB6D6EE43 /* bird.riv */; };
+		44F108113A1C43A68F8C211C /* constrained.riv in Resources */ = {isa = PBXBuildFile; fileRef = 890EA6282E6345B1B242F0F1 /* constrained.riv */; };
+		17BE3FB397FE4014BED96541 /* hero_editor.riv in Resources */ = {isa = PBXBuildFile; fileRef = 99362DC34882460EB47FD2E6 /* hero_editor.riv */; };
+		60EAB858E7084B1891F4B584 /* loopy.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7B6675FA06C74EB78214D6AB /* loopy.riv */; };
+		5C1B20F73C6841178461FB7A /* nested_menu.riv in Resources */ = {isa = PBXBuildFile; fileRef = 566AD1B70BC64F5DA8FADDF9 /* nested_menu.riv */; };
+		452A75D982D741EFADCF4973 /* rainy.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3938B06744AA442286C5AB49 /* rainy.riv */; };
+		AAFB3BDFD3564D45AC440B52 /* rating.riv in Resources */ = {isa = PBXBuildFile; fileRef = 37C6967A2BD74469BC06E4FD /* rating.riv */; };
+		7E53968A5643451991D86AE0 /* runtime_nested_inputs.riv in Resources */ = {isa = PBXBuildFile; fileRef = DC45D49AFFF84C77A0DCCA96 /* runtime_nested_inputs.riv */; };
+		BF2D0F0A60CC46F294F4B8AF /* skills_listener.riv in Resources */ = {isa = PBXBuildFile; fileRef = 278366F974A144F0B0710E8D /* skills_listener.riv */; };
+		DB19525D4F0347E39A7B366D /* switch.riv in Resources */ = {isa = PBXBuildFile; fileRef = 38E6DDCB2A814A0BA7360116 /* switch.riv */; };
+		FCFFAC0F683843C2A2BC66E0 /* two_bone_ik.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3BA541F0D4D9406183AD56D5 /* two_bone_ik.riv */; };
+		C4DB5A21102D416C971CDD06 /* v6_file.riv in Resources */ = {isa = PBXBuildFile; fileRef = 52BB71864FBC4D2086799DE8 /* v6_file.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +56,21 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-riveplayground/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		FD84BBA9F62E4AACBD12C1F6 /* truck_v7.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = truck_v7.riv; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/truck_v7.riv"; sourceTree = "<group>"; };
+		136298407A0342D89C4DF656 /* FollowPathCar.riv */ = {isa = PBXFileReference; name = "FollowPathCar.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/FollowPathCar.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F62D1E150E54428C945624F3 /* artboard_animations.riv */ = {isa = PBXFileReference; name = "artboard_animations.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/artboard_animations.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D9A73683C3D747D884DBB25E /* avatars.riv */ = {isa = PBXFileReference; name = "avatars.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/avatars.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		433832F8B7FD40FFB6D6EE43 /* bird.riv */ = {isa = PBXFileReference; name = "bird.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/bird.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		890EA6282E6345B1B242F0F1 /* constrained.riv */ = {isa = PBXFileReference; name = "constrained.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/constrained.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99362DC34882460EB47FD2E6 /* hero_editor.riv */ = {isa = PBXFileReference; name = "hero_editor.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/hero_editor.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7B6675FA06C74EB78214D6AB /* loopy.riv */ = {isa = PBXFileReference; name = "loopy.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/loopy.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		566AD1B70BC64F5DA8FADDF9 /* nested_menu.riv */ = {isa = PBXFileReference; name = "nested_menu.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/nested_menu.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3938B06744AA442286C5AB49 /* rainy.riv */ = {isa = PBXFileReference; name = "rainy.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/rainy.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		37C6967A2BD74469BC06E4FD /* rating.riv */ = {isa = PBXFileReference; name = "rating.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/rating.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC45D49AFFF84C77A0DCCA96 /* runtime_nested_inputs.riv */ = {isa = PBXFileReference; name = "runtime_nested_inputs.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/runtime_nested_inputs.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		278366F974A144F0B0710E8D /* skills_listener.riv */ = {isa = PBXFileReference; name = "skills_listener.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/skills_listener.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		38E6DDCB2A814A0BA7360116 /* switch.riv */ = {isa = PBXFileReference; name = "switch.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/switch.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BA541F0D4D9406183AD56D5 /* two_bone_ik.riv */ = {isa = PBXFileReference; name = "two_bone_ik.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/two_bone_ik.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		52BB71864FBC4D2086799DE8 /* v6_file.riv */ = {isa = PBXFileReference; name = "v6_file.riv"; path = "/Users/guval/headquarters/guvalApps/repositories/rive-playground/ios/Assets/v6_file.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +130,21 @@
 				FD84BBA9F62E4AACBD12C1F6 /* truck_v7.riv */,
 				3ED3E052773D4284BCB1EF3A /* ui_swipe_left_to_delete.riv */,
 				6B36BF9E13F04C86B78AF056 /* weather_app.riv */,
+				136298407A0342D89C4DF656 /* FollowPathCar.riv */,
+				F62D1E150E54428C945624F3 /* artboard_animations.riv */,
+				D9A73683C3D747D884DBB25E /* avatars.riv */,
+				433832F8B7FD40FFB6D6EE43 /* bird.riv */,
+				890EA6282E6345B1B242F0F1 /* constrained.riv */,
+				99362DC34882460EB47FD2E6 /* hero_editor.riv */,
+				7B6675FA06C74EB78214D6AB /* loopy.riv */,
+				566AD1B70BC64F5DA8FADDF9 /* nested_menu.riv */,
+				3938B06744AA442286C5AB49 /* rainy.riv */,
+				37C6967A2BD74469BC06E4FD /* rating.riv */,
+				DC45D49AFFF84C77A0DCCA96 /* runtime_nested_inputs.riv */,
+				278366F974A144F0B0710E8D /* skills_listener.riv */,
+				38E6DDCB2A814A0BA7360116 /* switch.riv */,
+				3BA541F0D4D9406183AD56D5 /* two_bone_ik.riv */,
+				52BB71864FBC4D2086799DE8 /* v6_file.riv */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -216,6 +261,21 @@
 				7CAAB0C4F2BD45FF89FB8F87 /* truck_v7.riv in Resources */,
 				7C4F6A3AE4D949C4847B7284 /* ui_swipe_left_to_delete.riv in Resources */,
 				601D4E1C138E4F4698E781A3 /* weather_app.riv in Resources */,
+				62A8D90792C346D4BD556A45 /* FollowPathCar.riv in Resources */,
+				502A355D11C84D6C8F85B422 /* artboard_animations.riv in Resources */,
+				AE55F34E97F84E5CA3B109E6 /* avatars.riv in Resources */,
+				F909A611F6614F9B88578BE6 /* bird.riv in Resources */,
+				44F108113A1C43A68F8C211C /* constrained.riv in Resources */,
+				17BE3FB397FE4014BED96541 /* hero_editor.riv in Resources */,
+				60EAB858E7084B1891F4B584 /* loopy.riv in Resources */,
+				5C1B20F73C6841178461FB7A /* nested_menu.riv in Resources */,
+				452A75D982D741EFADCF4973 /* rainy.riv in Resources */,
+				AAFB3BDFD3564D45AC440B52 /* rating.riv in Resources */,
+				7E53968A5643451991D86AE0 /* runtime_nested_inputs.riv in Resources */,
+				BF2D0F0A60CC46F294F4B8AF /* skills_listener.riv in Resources */,
+				DB19525D4F0347E39A7B366D /* switch.riv in Resources */,
+				FCFFAC0F683843C2A2BC66E0 /* two_bone_ik.riv in Resources */,
+				C4DB5A21102D416C971CDD06 /* v6_file.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +442,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.rive-playground";
-				PRODUCT_NAME = riveplayground;
+				PRODUCT_NAME = "riveplayground";
 				SWIFT_OBJC_BRIDGING_HEADER = "riveplayground/riveplayground-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -413,7 +473,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.rive-playground";
-				PRODUCT_NAME = riveplayground;
+				PRODUCT_NAME = "riveplayground";
 				SWIFT_OBJC_BRIDGING_HEADER = "riveplayground/riveplayground-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

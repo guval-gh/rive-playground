@@ -1,17 +1,12 @@
 import React from "react";
-import { useRef, useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { useRef } from "react";
+import { Pressable, View } from "react-native";
 import Rive, { Fit, RiveRef } from "rive-react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { CustomButton } from "@/components/Button";
 
-import { CustomButton } from "../../components/Button";
-
-export default function Example1() {
+export default function Playground() {
   const riveRef = useRef<RiveRef>(null);
-
-  const [animation, setAnimation] = useState<
-    "bouncing" | "idle" | "windshield_wipers" | "broken"
-  >("idle");
 
   const handlePlay = () => {
     riveRef.current?.play();
@@ -31,13 +26,15 @@ export default function Example1() {
 
   return (
     <>
-      <Rive
+      <View style={{ flex: 1 }} />
+      {/* <Rive
         ref={riveRef}
         fit={Fit.FitWidth}
-        resourceName="truck_v7"
+        // resourceName={""}
+        // url={""}
         animationName={animation}
-        autoplay={false}
-      />
+        autoplay={true}
+      /> */}
       <View
         style={{
           justifyContent: "center",
@@ -62,30 +59,7 @@ export default function Example1() {
         </View>
 
         <View style={{ flexDirection: "row", gap: 10 }}>
-          <CustomButton
-            onPress={() => setAnimation("idle")}
-            isSelected={animation === "idle"}
-          >
-            <Text>Idle</Text>
-          </CustomButton>
-          <CustomButton
-            onPress={() => setAnimation("bouncing")}
-            isSelected={animation === "bouncing"}
-          >
-            <Text>Bouncing</Text>
-          </CustomButton>
-          <CustomButton
-            onPress={() => setAnimation("windshield_wipers")}
-            isSelected={animation === "windshield_wipers"}
-          >
-            <Text>Windshield wipers</Text>
-          </CustomButton>
-          <CustomButton
-            onPress={() => setAnimation("broken")}
-            isSelected={animation === "broken"}
-          >
-            <Text>Broken</Text>
-          </CustomButton>
+          <CustomButton onPress={() => null} text="???" />
         </View>
       </View>
     </>
