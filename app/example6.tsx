@@ -33,7 +33,7 @@ export default function Example6() {
         alignment={Alignment.Center}
         style={styles.animation}
         source={malformedFileUrl}
-        // url={correctFileUrl}
+        // source={correctFileUrl}
         onError={(riveError: RNRiveError) => {
           switch (riveError.type) {
             case RNRiveErrorType.IncorrectRiveFileUrl: {
