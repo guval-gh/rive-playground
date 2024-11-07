@@ -2,11 +2,27 @@
 
 Just a little playground to make some tests with Rive.
 
+- [Get started](#get-started)
 - [Environment](#environment)
 - [Issues](#issues)
 - [Feature](#feature)
 - [Helpers](#helpers)
   - [Handle .RIV assets with expo-custom-assets](#handle-riv-assets-with-expo-custom-assets)
+
+## Get started
+
+1. Install dependencies
+
+```bash
+yarn install
+```
+
+2. Build and run the app
+
+```bash
+yarn ios
+yarn android
+```
 
 ## Environment
 
