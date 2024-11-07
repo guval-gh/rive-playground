@@ -1,95 +1,87 @@
-import * as React from "react";
-import { useRef } from "react";
-
-import { StyleSheet } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
-import {
-  Alignment,
-  Fit,
-  RNRiveError,
-  RNRiveErrorType,
-  RiveRef,
-} from "rive-react-native";
-
 import { RiveAnimation } from "@/components/RiveAnimation";
+import * as React from "react";
+import { View } from "react-native";
+import { Alignment, RiveRef } from "rive-react-native";
 
-const malformedFileUrl =
-  "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg";
-
-const correctFileUrl =
-  "https://public.rive.app/community/runtime-files/2195-4346-avatar-pack-use-case.riv";
+import NestedInputsAnimation from "@/assets/animations/runtime_nested_inputs.riv";
+import { CustomButton } from "@/components/Button";
 
 export default function Example6() {
-  const riveRef = useRef<RiveRef>(null);
-
-  const handleInputChange = (e: string) => {
-    riveRef.current?.setTextRunValue("name", e);
-  };
+  const riveRef = React.useRef<RiveRef>(null);
+  const [hasOuterCircle, setHasOuterCircle] = React.useState(false);
+  const [hasInnerCircle, setHasInnerCircle] = React.useState(false);
 
   return (
     <>
       <RiveAnimation
-        fit={Fit.Contain}
+        ref={riveRef}
         alignment={Alignment.Center}
-        style={styles.animation}
-        source={malformedFileUrl}
-        // source={correctFileUrl}
-        onError={(riveError: RNRiveError) => {
-          switch (riveError.type) {
-            case RNRiveErrorType.IncorrectRiveFileUrl: {
-              console.log(`${riveError.message}`);
-              return;
-            }
-            case RNRiveErrorType.MalformedFile: {
-              console.log("Malformed File");
-              return;
-            }
-            case RNRiveErrorType.FileNotFound: {
-              console.log("File not found");
-              return;
-            }
-            case RNRiveErrorType.IncorrectArtboardName: {
-              console.log("IncorrectAnimationName");
-              return;
-            }
-            case RNRiveErrorType.UnsupportedRuntimeVersion: {
-              console.log("Runtime version unsupported");
-              return;
-            }
-            case RNRiveErrorType.IncorrectStateMachineName: {
-              console.log(`${riveError.message}`);
-              return;
-            }
-            case RNRiveErrorType.IncorrectStateMachineInput: {
-              console.log(`${riveError.message}`);
-              return;
-            }
-            default:
-              return;
-          }
+        autoplay={true}
+        stateMachineName="MainStateMachine"
+        source={NestedInputsAnimation}
+      />
+      <View
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          margin: 10,
+          gap: 10,
         }}
-      />
-      <TextInput
-        onChangeText={handleInputChange}
-        defaultValue="world"
-        style={styles.input}
-      />
+      >
+        <View style={{ gap: 10 }}>
+          <CustomButton
+            text="Outer Circle On"
+            isSelected={hasOuterCircle}
+            onPress={() => {
+              setHasOuterCircle(true);
+              riveRef.current?.setInputStateAtPath(
+                "CircleOuterState",
+                true,
+                "CircleOuter"
+              );
+            }}
+          />
+          <CustomButton
+            text="Outer Circle Off"
+            isSelected={!hasOuterCircle}
+            onPress={() => {
+              setHasOuterCircle(false);
+              riveRef.current?.setInputStateAtPath(
+                "CircleOuterState",
+                false,
+                "CircleOuter"
+              );
+            }}
+          />
+        </View>
+        <View style={{ gap: 10 }}>
+          <CustomButton
+            text="Inner Circle On"
+            isSelected={hasInnerCircle}
+            onPress={() => {
+              setHasInnerCircle(true);
+              riveRef.current?.setInputStateAtPath(
+                "CircleInnerState",
+                true,
+                "CircleOuter/CircleInner"
+              );
+            }}
+          />
+          <CustomButton
+            text="Inner Circle Off"
+            isSelected={!hasInnerCircle}
+            onPress={() => {
+              setHasInnerCircle(false);
+              riveRef.current?.setInputStateAtPath(
+                "CircleInnerState",
+                false,
+                "CircleOuter/CircleInner"
+              );
+            }}
+          />
+        </View>
+      </View>
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  safeAreaViewContainer: {
-    flex: 1,
-  },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  animation: {
-    width: "100%",
-    height: 100,
-  },
-});

@@ -67,7 +67,7 @@ export default function RootLayout() {
             isSelected={currentRoute === "/example3"}
           />
           <CustomButton
-            text="Mesh state machine"
+            text="StateMachine"
             onPress={() => router.replace("/example4")}
             isSelected={currentRoute === "/example4"}
           />
@@ -77,9 +77,14 @@ export default function RootLayout() {
             isSelected={currentRoute === "/example5"}
           />
           <CustomButton
-            text="Crash on iOS"
+            text="inputStateAtPath"
             onPress={() => router.replace("/example6")}
             isSelected={currentRoute === "/example6"}
+          />
+          <CustomButton
+            text="Crash"
+            onPress={() => router.replace("/example7")}
+            isSelected={currentRoute === "/example7"}
           />
         </View>
       </SafeAreaView>
