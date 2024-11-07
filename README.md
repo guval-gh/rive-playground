@@ -1,6 +1,22 @@
 # Playground for Rive
 
-Just a little playground to make some tests with Rive.
+Just a little playground to:
+
+- make some tests with Rive
+- have some examples from [Documentation](https://github.com/rive-app/rive-react-native/tree/main/example)
+- list some usefull doc/helpers.
+
+## Screenshots
+
+|               Playground                |               Controls                |               Fire State                |
+| :-------------------------------------: | :-----------------------------------: | :-------------------------------------: |
+| ![Playground](assets/screenshots/1.png) | ![Controls](assets/screenshots/2.png) | ![Fire State](assets/screenshots/3.png) |
+
+|               Set Input State                |               Mesh State Machine                |               Avatars                |
+| :------------------------------------------: | :---------------------------------------------: | :----------------------------------: |
+| ![Set Input State](assets/screenshots/4.png) | ![Mesh State Machine](assets/screenshots/5.png) | ![Avatars](assets/screenshots/6.png) |
+
+## Table of contents
 
 - [Get started](#get-started)
 - [Environment](#environment)
@@ -8,6 +24,7 @@ Just a little playground to make some tests with Rive.
 - [Feature](#feature)
 - [Helpers](#helpers)
   - [Handle .RIV assets with expo-custom-assets](#handle-riv-assets-with-expo-custom-assets)
+  - [Handle .RIV assets with resolveAssetSource custom config](#handle-riv-assets-with-resolveassetsource-custom-config)
 
 ## Get started
 
@@ -33,12 +50,12 @@ yarn android
 
 ⚠️ For the moment, there are some issues with the package `rive-react-native` on the `8.0.0` so I keep using the `7.2.0`.
 
-## Issues
+## Issues about `rive-react-native`
 
 - https://github.com/rive-app/rive-react-native/issues/272
 - https://github.com/rive-app/rive-react-native/issues/268
 
-## Feature
+## Feature watched
 
 [Assets Loader](https://rive.app/community/doc/loading-assets/doct4wVHGPgC#handling-assets) needed for RN
 
