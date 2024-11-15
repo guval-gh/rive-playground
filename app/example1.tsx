@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useState } from "react";
 import { Pressable, View } from "react-native";
-import { Fit, RiveRef } from "rive-react-native";
+import { Fit, RiveRef, RNRiveError, RNRiveErrorType } from "rive-react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import { CustomButton } from "@/components/Button";
@@ -66,6 +66,40 @@ export default function Example1() {
         }}
         onLoopEnd={(animationName, loopMode) => {
           console.log("onLoopEnd: ", animationName, "loopMode: ", loopMode);
+        }}
+        onError={(riveError: RNRiveError) => {
+          switch (riveError.type) {
+            case RNRiveErrorType.IncorrectRiveFileUrl: {
+              console.log(`${riveError.message}`);
+              return;
+            }
+            case RNRiveErrorType.MalformedFile: {
+              console.log("Malformed File");
+              return;
+            }
+            case RNRiveErrorType.FileNotFound: {
+              console.log("File not found");
+              return;
+            }
+            case RNRiveErrorType.IncorrectArtboardName: {
+              console.log("IncorrectAnimationName");
+              return;
+            }
+            case RNRiveErrorType.UnsupportedRuntimeVersion: {
+              console.log("Runtime version unsupported");
+              return;
+            }
+            case RNRiveErrorType.IncorrectStateMachineName: {
+              console.log(`${riveError.message}`);
+              return;
+            }
+            case RNRiveErrorType.IncorrectStateMachineInput: {
+              console.log(`${riveError.message}`);
+              return;
+            }
+            default:
+              return;
+          }
         }}
       />
       <View
