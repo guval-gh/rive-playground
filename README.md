@@ -43,14 +43,12 @@ yarn android
 
 ## Environment
 
-- Expo: ~52.0.0-preview.13
-- React Native: 0.76.1
+- Expo: ~52.0.7
+- React Native: 0.76.2
 - Yarn: 4.5.1
-- Rive: 7.2.0
+- Rive: 8.1.0
 
-⚠️ For the moment, there are some issues with the package `rive-react-native` on the `8.0.0` so I keep using the `7.2.0`.
-
-## Issues about `rive-react-native`
+⚠️ `rive-react-native` version `8.1.0` seems to fix the folowing issue:
 
 - https://github.com/rive-app/rive-react-native/issues/272
 - https://github.com/rive-app/rive-react-native/issues/268
@@ -117,6 +115,23 @@ import Rive from "rive-react-native";
 ### Handle .RIV assets with `resolveAssetSource` custom config
 
 To automatically use `.riv` local files in custom wrapper component without the need to import them in the native folders.
+
+⚠️ However, it seems to be some unexpected behaviour.
+When this solution is implemented, when you set animation on iOS (example below with `bouncing` and `idle`), there is a white flash at each switch.
+
+```tsx
+const [animation, setAnimation] = useState<"bouncing" | "idle">("idle");
+
+return (
+  <>
+    <RiveAnimation source={truckV7} animationName={animation} />
+    <Button onPress={() => setAnimation("bouncing")}>Play bouncing</Button>
+    <Button onPress={() => setAnimation("idle")}>Play idle</Button>
+  </>
+);
+```
+
+Maybe consider using [Handle .RIV assets with expo-custom-assets](#handle-riv-assets-with-expo-custom-assets) for production 🤷‍♂️
 
 1. Modify the `metro.config.js` file:
 
