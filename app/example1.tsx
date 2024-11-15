@@ -12,6 +12,15 @@ import { RiveAnimation } from "@/components/RiveAnimation";
 export default function Example1() {
   const riveRef = useRef<RiveRef>(null);
 
+  // const episode = {
+  //   id: 1,
+  //   name: "Episode 1",
+  //   animations: ["idle", "bouncing", "windshield_wipers", "broken"],
+  //   fileUrl: "https://xxxxx/xxxxx.riv",
+  // };
+
+  // const [currentAnimationId, setCurrentAnimationId] = useState<number>(0);
+
   const [animation, setAnimation] = useState<
     "bouncing" | "idle" | "windshield_wipers" | "broken"
   >("idle");
@@ -38,7 +47,11 @@ export default function Example1() {
         ref={riveRef}
         fit={Fit.FitWidth}
         source={truckV7}
+        // source={
+        //   "https://public.rive.app/community/runtime-files/2195-4346-avatar-pack-use-case.riv"
+        // }
         animationName={animation}
+        // animationName={episode.animations[currentAnimationId]}
         autoplay={true}
         onPlay={(animationName, isStateMachine) => {
           console.log(
@@ -66,6 +79,12 @@ export default function Example1() {
         }}
         onLoopEnd={(animationName, loopMode) => {
           console.log("onLoopEnd: ", animationName, "loopMode: ", loopMode);
+          // setCurrentAnimationId((prev) =>
+          //   prev >= episode.animations.length - 1 ? 0 : prev + 1
+          // );
+        }}
+        onRiveEventReceived={(event) => {
+          console.log("onRiveEventReceived: ", event);
         }}
         onError={(riveError: RNRiveError) => {
           switch (riveError.type) {
