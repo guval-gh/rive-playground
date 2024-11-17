@@ -12,9 +12,9 @@ Just a little playground to:
 | :-------------------------------------: | :-----------------------------------: | :-------------------------------------: |
 | ![Playground](assets/screenshots/1.png) | ![Controls](assets/screenshots/2.png) | ![Fire State](assets/screenshots/3.png) |
 
-| Set Input State | Mesh State Machine | Avatars | | InputStateAtPath |
-| :------------------------------------------: | :---------------------------------------------: | :----------------------------------: | | :----------------------------------: |
-| ![Set Input State](assets/screenshots/4.png) | ![Mesh State Machine](assets/screenshots/5.png) | ![Avatars](assets/screenshots/6.png) | | ![InputStateAtPath](assets/screenshots/7.png) |
+|               Set Input State                |               Mesh State Machine                |               Avatars                |               InputStateAtPath                |
+| :------------------------------------------: | :---------------------------------------------: | :----------------------------------: | :-------------------------------------------: |
+| ![Set Input State](assets/screenshots/4.png) | ![Mesh State Machine](assets/screenshots/5.png) | ![Avatars](assets/screenshots/6.png) | ![InputStateAtPath](assets/screenshots/7.png) |
 
 ## Table of contents
 
