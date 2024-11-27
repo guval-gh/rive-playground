@@ -8801,18 +8801,18 @@ __metadata:
     react-native-screens: "npm:~4.0.0"
     react-native-web: "npm:~0.19.13"
     react-test-renderer: "npm:18.3.1"
-    rive-react-native: "npm:8.1.0"
+    rive-react-native: "npm:^8.2.0"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
 
-"rive-react-native@npm:8.1.0":
-  version: 8.1.0
-  resolution: "rive-react-native@npm:8.1.0"
+"rive-react-native@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "rive-react-native@npm:8.2.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/626b507d3ff9445bca5d46344e6719a8cc17531a938e4e52df2c99f5816729e5aef6063bcb2f99b5e288f1254df4f655aafd3515f0951fd028b00cbde1fface5
+  checksum: 10c0/57b7399c03f18bb6701ec4dbe065914be6c158b6348cd7d0d254288fcef03b43c7e31dbb7d126d67270b287f09d163010dd2cb811341c3aba481ce7ffafee08a
   languageName: node
   linkType: hard
 
