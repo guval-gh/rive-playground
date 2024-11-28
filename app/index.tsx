@@ -1,15 +1,16 @@
-import React from "react";
-import { Fit } from "rive-react-native";
-import { RiveAnimation } from "@/components/RiveAnimation";
-
-import Rating from "@/assets/animations/rating.riv";
+import React, { useRef } from "react";
+import Rive, { Fit, RiveRef } from "rive-react-native";
 
 export default function Playground() {
+  const riveRef = useRef<RiveRef>(null);
+
   return (
-    <RiveAnimation
-      fit={Fit.FitWidth}
-      source={Rating}
+    <Rive
+      ref={riveRef}
       autoplay={true}
+      fit={Fit.Cover}
+      stateMachineName="skill-controller"
+      resourceName="skills_listener"
       onPlay={(animationName, isStateMachine) => {
         console.log(
           "onPlay: ",
