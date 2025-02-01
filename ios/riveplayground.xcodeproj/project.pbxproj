@@ -7,70 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EEAAF32BBBE421695054D53 /* weather_app.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3C2567B2D8944EAFBE7AC2DE /* weather_app.riv */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		231E27544F544CEFAF60000D /* artboard_animations.riv in Resources */ = {isa = PBXBuildFile; fileRef = 8A8B9444F8B74D9C95EE92B1 /* artboard_animations.riv */; };
-		261E138C3FFB4640A4547E83 /* rainy.riv in Resources */ = {isa = PBXBuildFile; fileRef = 279C0AB5D5F04D71862100D6 /* rainy.riv */; };
-		321E2BA193FE41D892B213C1 /* ui_swipe_left_to_delete.riv in Resources */ = {isa = PBXBuildFile; fileRef = D362104206634538ACEB76C5 /* ui_swipe_left_to_delete.riv */; };
-		3A24DB15506D412DA4FCBC55 /* rating.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3E058C74C8524A69BDBB03F0 /* rating.riv */; };
+		31E2D229C6CA4871849385DA /* FollowPathCar.riv in Resources */ = {isa = PBXBuildFile; fileRef = DD08A97233534777BF106526 /* FollowPathCar.riv */; };
+		366DDBE82FB54D8FAD4F10E6 /* truck_v7.riv in Resources */ = {isa = PBXBuildFile; fileRef = 19208A23317645DDA61B22E5 /* truck_v7.riv */; };
+		3CA4E6529ED74A4B8EF4D79A /* bird.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3EFC9F380E1346CFB6FF73CE /* bird.riv */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		3EB04DF9B802430F8F012A60 /* v6_file.riv in Resources */ = {isa = PBXBuildFile; fileRef = 82512D4097D8406B9C53E8B4 /* v6_file.riv */; };
-		40D6DFE50B29443FB6EFBF2A /* skills_listener.riv in Resources */ = {isa = PBXBuildFile; fileRef = 36172BB9AA67430C940B13B1 /* skills_listener.riv */; };
-		54764E7EA6FF42EA9C2FAF36 /* nested_menu.riv in Resources */ = {isa = PBXBuildFile; fileRef = C250461EA7AD4CD591A0EE06 /* nested_menu.riv */; };
-		568AAB96B5DB4371843FF34D /* FollowPathCar.riv in Resources */ = {isa = PBXBuildFile; fileRef = 07B44E10B3444C688CD79287 /* FollowPathCar.riv */; };
-		5AA94C6791274A8682F5A2EC /* two_bone_ik.riv in Resources */ = {isa = PBXBuildFile; fileRef = 2AD6E1278DCF4AF7B9B18050 /* two_bone_ik.riv */; };
-		6CB6D378437C4289BF791DB9 /* bird.riv in Resources */ = {isa = PBXBuildFile; fileRef = 2AD0186720C74677A2A24C98 /* bird.riv */; };
-		7634869EBF994D9FBA851F48 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BD7E0DADEC4F6F9DFA75F1 /* noop-file.swift */; };
-		7C30BD19A274418C9B075F6E /* truck_v7.riv in Resources */ = {isa = PBXBuildFile; fileRef = 88CAAA2B16304503B22FD1F8 /* truck_v7.riv */; };
-		825E588DD07E48BAAEBCED9C /* weather_app.riv in Resources */ = {isa = PBXBuildFile; fileRef = 586D5AC9D93A47A3A8224C0E /* weather_app.riv */; };
-		856CDADF691B474386266C53 /* runtime_nested_inputs.riv in Resources */ = {isa = PBXBuildFile; fileRef = B12A5095C33F4100A9C69219 /* runtime_nested_inputs.riv */; };
-		8861FB3B4312A695425EE1B0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3BF89A11A053F384C9B82062 /* PrivacyInfo.xcprivacy */; };
+		533016F7CD874736BCDAC982 /* two_bone_ik.riv in Resources */ = {isa = PBXBuildFile; fileRef = 54BF3873055048178715BF6E /* two_bone_ik.riv */; };
+		55DC91A45DBB40DD88869871 /* switch.riv in Resources */ = {isa = PBXBuildFile; fileRef = 32FDA41C3C0E4FBCA4635895 /* switch.riv */; };
+		62D41BC0DF4A4AE69C860CBC /* loopy.riv in Resources */ = {isa = PBXBuildFile; fileRef = 18CC16D515AC470AA5B29C12 /* loopy.riv */; };
+		818F29A6D49F4CB999128294 /* rainy.riv in Resources */ = {isa = PBXBuildFile; fileRef = EE69BA0650DA43EB8B86304F /* rainy.riv */; };
+		8DFD2DBB50DB43EF8CD8ED43 /* runtime_nested_inputs.riv in Resources */ = {isa = PBXBuildFile; fileRef = D1286950252B490EB299E21A /* runtime_nested_inputs.riv */; };
 		96905EF65AED1B983A6B3ABC /* libPods-riveplayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-riveplayground.a */; };
-		A1C0BEBE0AC043BFA1CE6FCF /* switch.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6CC33A63776C4A69B9E5942F /* switch.riv */; };
+		9879D27A750E49E1BB96DA35 /* artboard_animations.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A249E6605475CA4DCC5F3 /* artboard_animations.riv */; };
+		A9148BF870884A4AA559AD00 /* avatars.riv in Resources */ = {isa = PBXBuildFile; fileRef = 1C48CE2A6A074850AAE75C7C /* avatars.riv */; };
+		A92163140F6045E3820510D4 /* skills_listener.riv in Resources */ = {isa = PBXBuildFile; fileRef = 1B24BF984F674E47B85A33B7 /* skills_listener.riv */; };
+		AC3C0E0D777F43868CE4D0D3 /* hero_editor.riv in Resources */ = {isa = PBXBuildFile; fileRef = 573402FD723E4E56840731AE /* hero_editor.riv */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
-		B53A5C1564784F4C808E2B9C /* loopy.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CA4A3B74147F386D84B73 /* loopy.riv */; };
+		B4D14DFA89C549D59C12E4F8 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639700E13EF24201A3713D28 /* noop-file.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		CC21F89266734A4597ACC148 /* avatars.riv in Resources */ = {isa = PBXBuildFile; fileRef = EA40C7BE1316444C95A619AB /* avatars.riv */; };
-		D76295D43A00433EAFB785D4 /* hero_editor.riv in Resources */ = {isa = PBXBuildFile; fileRef = 2C4C24DC1D1441D89938700D /* hero_editor.riv */; };
-		FD49AFCFBE6A4997BA18C1D7 /* constrained.riv in Resources */ = {isa = PBXBuildFile; fileRef = 632945FD679545B8926B20B0 /* constrained.riv */; };
+		BDA141D81DFD1733C729C172 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D2105922E01CCB32F85C3528 /* PrivacyInfo.xcprivacy */; };
+		BE73E9683E7D4CDEB9845293 /* rating.riv in Resources */ = {isa = PBXBuildFile; fileRef = 814CD98B51FE413C8D6AFB4A /* rating.riv */; };
+		D8FDAD17802D4A34AE1EC9A3 /* nested_menu.riv in Resources */ = {isa = PBXBuildFile; fileRef = 71BC92CD955546A8AF7B7AFF /* nested_menu.riv */; };
+		E25E86DD0DF84306AFF7B2E0 /* constrained.riv in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A9BFA2E3F496784C90F92 /* constrained.riv */; };
+		EC1930C9ADEF46ADA7816CC6 /* ui_swipe_left_to_delete.riv in Resources */ = {isa = PBXBuildFile; fileRef = 69AF6DA4FAEA41CA9A3C3142 /* ui_swipe_left_to_delete.riv */; };
+		F7445A2DC62D4DDD8FE9545F /* v6_file.riv in Resources */ = {isa = PBXBuildFile; fileRef = 941B3144CEE94CAC9C022778 /* v6_file.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07B44E10B3444C688CD79287 /* FollowPathCar.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FollowPathCar.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/FollowPathCar.riv"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* riveplayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riveplayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = riveplayground/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = riveplayground/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = riveplayground/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = riveplayground/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = riveplayground/main.m; sourceTree = "<group>"; };
-		279C0AB5D5F04D71862100D6 /* rainy.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = rainy.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/rainy.riv"; sourceTree = "<group>"; };
-		2AD0186720C74677A2A24C98 /* bird.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = bird.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/bird.riv"; sourceTree = "<group>"; };
-		2AD6E1278DCF4AF7B9B18050 /* two_bone_ik.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = two_bone_ik.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/two_bone_ik.riv"; sourceTree = "<group>"; };
-		2C4C24DC1D1441D89938700D /* hero_editor.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = hero_editor.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/hero_editor.riv"; sourceTree = "<group>"; };
-		36172BB9AA67430C940B13B1 /* skills_listener.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = skills_listener.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/skills_listener.riv"; sourceTree = "<group>"; };
-		3BF89A11A053F384C9B82062 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = riveplayground/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3E058C74C8524A69BDBB03F0 /* rating.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = rating.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/rating.riv"; sourceTree = "<group>"; };
-		586D5AC9D93A47A3A8224C0E /* weather_app.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = weather_app.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/weather_app.riv"; sourceTree = "<group>"; };
+		18CC16D515AC470AA5B29C12 /* loopy.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = loopy.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/loopy.riv"; sourceTree = "<group>"; };
+		19208A23317645DDA61B22E5 /* truck_v7.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = truck_v7.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/truck_v7.riv"; sourceTree = "<group>"; };
+		1B24BF984F674E47B85A33B7 /* skills_listener.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = skills_listener.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/skills_listener.riv"; sourceTree = "<group>"; };
+		1C48CE2A6A074850AAE75C7C /* avatars.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = avatars.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/avatars.riv"; sourceTree = "<group>"; };
+		2E4A9BFA2E3F496784C90F92 /* constrained.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = constrained.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/constrained.riv"; sourceTree = "<group>"; };
+		32FDA41C3C0E4FBCA4635895 /* switch.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = switch.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/switch.riv"; sourceTree = "<group>"; };
+		3C2567B2D8944EAFBE7AC2DE /* weather_app.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = weather_app.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/weather_app.riv"; sourceTree = "<group>"; };
+		3C6A249E6605475CA4DCC5F3 /* artboard_animations.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = artboard_animations.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/artboard_animations.riv"; sourceTree = "<group>"; };
+		3EFC9F380E1346CFB6FF73CE /* bird.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = bird.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/bird.riv"; sourceTree = "<group>"; };
+		4B558264BC7F4047B18BC5A4 /* riveplayground-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "riveplayground-Bridging-Header.h"; path = "riveplayground/riveplayground-Bridging-Header.h"; sourceTree = "<group>"; };
+		54BF3873055048178715BF6E /* two_bone_ik.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = two_bone_ik.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/two_bone_ik.riv"; sourceTree = "<group>"; };
+		573402FD723E4E56840731AE /* hero_editor.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = hero_editor.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/hero_editor.riv"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-riveplayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-riveplayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		632945FD679545B8926B20B0 /* constrained.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = constrained.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/constrained.riv"; sourceTree = "<group>"; };
-		66BD7E0DADEC4F6F9DFA75F1 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "riveplayground/noop-file.swift"; sourceTree = "<group>"; };
+		639700E13EF24201A3713D28 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "riveplayground/noop-file.swift"; sourceTree = "<group>"; };
+		69AF6DA4FAEA41CA9A3C3142 /* ui_swipe_left_to_delete.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = ui_swipe_left_to_delete.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/ui_swipe_left_to_delete.riv"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-riveplayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-riveplayground.debug.xcconfig"; path = "Target Support Files/Pods-riveplayground/Pods-riveplayground.debug.xcconfig"; sourceTree = "<group>"; };
-		6CC33A63776C4A69B9E5942F /* switch.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = switch.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/switch.riv"; sourceTree = "<group>"; };
-		6F7CA4A3B74147F386D84B73 /* loopy.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = loopy.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/loopy.riv"; sourceTree = "<group>"; };
+		71BC92CD955546A8AF7B7AFF /* nested_menu.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = nested_menu.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/nested_menu.riv"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-riveplayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-riveplayground.release.xcconfig"; path = "Target Support Files/Pods-riveplayground/Pods-riveplayground.release.xcconfig"; sourceTree = "<group>"; };
-		82512D4097D8406B9C53E8B4 /* v6_file.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = v6_file.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/v6_file.riv"; sourceTree = "<group>"; };
-		88CAAA2B16304503B22FD1F8 /* truck_v7.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = truck_v7.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/truck_v7.riv"; sourceTree = "<group>"; };
-		8A8B9444F8B74D9C95EE92B1 /* artboard_animations.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = artboard_animations.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/artboard_animations.riv"; sourceTree = "<group>"; };
+		814CD98B51FE413C8D6AFB4A /* rating.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = rating.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/rating.riv"; sourceTree = "<group>"; };
+		941B3144CEE94CAC9C022778 /* v6_file.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = v6_file.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/v6_file.riv"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = riveplayground/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B12A5095C33F4100A9C69219 /* runtime_nested_inputs.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = runtime_nested_inputs.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/runtime_nested_inputs.riv"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C250461EA7AD4CD591A0EE06 /* nested_menu.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = nested_menu.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/nested_menu.riv"; sourceTree = "<group>"; };
-		D362104206634538ACEB76C5 /* ui_swipe_left_to_delete.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = ui_swipe_left_to_delete.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/ui_swipe_left_to_delete.riv"; sourceTree = "<group>"; };
-		EA40C7BE1316444C95A619AB /* avatars.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = avatars.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/avatars.riv"; sourceTree = "<group>"; };
+		D1286950252B490EB299E21A /* runtime_nested_inputs.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = runtime_nested_inputs.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/runtime_nested_inputs.riv"; sourceTree = "<group>"; };
+		D2105922E01CCB32F85C3528 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = riveplayground/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DD08A97233534777BF106526 /* FollowPathCar.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FollowPathCar.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/FollowPathCar.riv"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE69BA0650DA43EB8B86304F /* rainy.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = rainy.riv; path = "/Users/guval/workspace/rive-playground/ios/Assets/rainy.riv"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-riveplayground/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		FB755031E1F6458486500D8C /* riveplayground-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "riveplayground-Bridging-Header.h"; path = "riveplayground/riveplayground-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +95,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				66BD7E0DADEC4F6F9DFA75F1 /* noop-file.swift */,
-				FB755031E1F6458486500D8C /* riveplayground-Bridging-Header.h */,
-				3BF89A11A053F384C9B82062 /* PrivacyInfo.xcprivacy */,
+				639700E13EF24201A3713D28 /* noop-file.swift */,
+				4B558264BC7F4047B18BC5A4 /* riveplayground-Bridging-Header.h */,
+				D2105922E01CCB32F85C3528 /* PrivacyInfo.xcprivacy */,
 			);
 			name = riveplayground;
 			sourceTree = "<group>";
@@ -127,24 +127,24 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				07B44E10B3444C688CD79287 /* FollowPathCar.riv */,
-				8A8B9444F8B74D9C95EE92B1 /* artboard_animations.riv */,
-				EA40C7BE1316444C95A619AB /* avatars.riv */,
-				2AD0186720C74677A2A24C98 /* bird.riv */,
-				632945FD679545B8926B20B0 /* constrained.riv */,
-				2C4C24DC1D1441D89938700D /* hero_editor.riv */,
-				6F7CA4A3B74147F386D84B73 /* loopy.riv */,
-				C250461EA7AD4CD591A0EE06 /* nested_menu.riv */,
-				279C0AB5D5F04D71862100D6 /* rainy.riv */,
-				3E058C74C8524A69BDBB03F0 /* rating.riv */,
-				B12A5095C33F4100A9C69219 /* runtime_nested_inputs.riv */,
-				36172BB9AA67430C940B13B1 /* skills_listener.riv */,
-				6CC33A63776C4A69B9E5942F /* switch.riv */,
-				88CAAA2B16304503B22FD1F8 /* truck_v7.riv */,
-				2AD6E1278DCF4AF7B9B18050 /* two_bone_ik.riv */,
-				D362104206634538ACEB76C5 /* ui_swipe_left_to_delete.riv */,
-				82512D4097D8406B9C53E8B4 /* v6_file.riv */,
-				586D5AC9D93A47A3A8224C0E /* weather_app.riv */,
+				DD08A97233534777BF106526 /* FollowPathCar.riv */,
+				3C6A249E6605475CA4DCC5F3 /* artboard_animations.riv */,
+				1C48CE2A6A074850AAE75C7C /* avatars.riv */,
+				3EFC9F380E1346CFB6FF73CE /* bird.riv */,
+				2E4A9BFA2E3F496784C90F92 /* constrained.riv */,
+				573402FD723E4E56840731AE /* hero_editor.riv */,
+				18CC16D515AC470AA5B29C12 /* loopy.riv */,
+				71BC92CD955546A8AF7B7AFF /* nested_menu.riv */,
+				EE69BA0650DA43EB8B86304F /* rainy.riv */,
+				814CD98B51FE413C8D6AFB4A /* rating.riv */,
+				D1286950252B490EB299E21A /* runtime_nested_inputs.riv */,
+				1B24BF984F674E47B85A33B7 /* skills_listener.riv */,
+				32FDA41C3C0E4FBCA4635895 /* switch.riv */,
+				19208A23317645DDA61B22E5 /* truck_v7.riv */,
+				54BF3873055048178715BF6E /* two_bone_ik.riv */,
+				69AF6DA4FAEA41CA9A3C3142 /* ui_swipe_left_to_delete.riv */,
+				941B3144CEE94CAC9C022778 /* v6_file.riv */,
+				3C2567B2D8944EAFBE7AC2DE /* weather_app.riv */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -201,13 +201,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "riveplayground" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				3CF84CFE7BF8F2569403773E /* [Expo] Configure project */,
+				066DA9D27A2672F3F2DDB898 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				EB3A9107280016F50E82443F /* [CP] Embed Pods Frameworks */,
+				00C6612366498D6BDC471487 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,31 +257,51 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				568AAB96B5DB4371843FF34D /* FollowPathCar.riv in Resources */,
-				231E27544F544CEFAF60000D /* artboard_animations.riv in Resources */,
-				CC21F89266734A4597ACC148 /* avatars.riv in Resources */,
-				6CB6D378437C4289BF791DB9 /* bird.riv in Resources */,
-				FD49AFCFBE6A4997BA18C1D7 /* constrained.riv in Resources */,
-				D76295D43A00433EAFB785D4 /* hero_editor.riv in Resources */,
-				B53A5C1564784F4C808E2B9C /* loopy.riv in Resources */,
-				54764E7EA6FF42EA9C2FAF36 /* nested_menu.riv in Resources */,
-				261E138C3FFB4640A4547E83 /* rainy.riv in Resources */,
-				3A24DB15506D412DA4FCBC55 /* rating.riv in Resources */,
-				856CDADF691B474386266C53 /* runtime_nested_inputs.riv in Resources */,
-				40D6DFE50B29443FB6EFBF2A /* skills_listener.riv in Resources */,
-				A1C0BEBE0AC043BFA1CE6FCF /* switch.riv in Resources */,
-				7C30BD19A274418C9B075F6E /* truck_v7.riv in Resources */,
-				5AA94C6791274A8682F5A2EC /* two_bone_ik.riv in Resources */,
-				321E2BA193FE41D892B213C1 /* ui_swipe_left_to_delete.riv in Resources */,
-				3EB04DF9B802430F8F012A60 /* v6_file.riv in Resources */,
-				825E588DD07E48BAAEBCED9C /* weather_app.riv in Resources */,
-				8861FB3B4312A695425EE1B0 /* PrivacyInfo.xcprivacy in Resources */,
+				31E2D229C6CA4871849385DA /* FollowPathCar.riv in Resources */,
+				9879D27A750E49E1BB96DA35 /* artboard_animations.riv in Resources */,
+				A9148BF870884A4AA559AD00 /* avatars.riv in Resources */,
+				3CA4E6529ED74A4B8EF4D79A /* bird.riv in Resources */,
+				E25E86DD0DF84306AFF7B2E0 /* constrained.riv in Resources */,
+				AC3C0E0D777F43868CE4D0D3 /* hero_editor.riv in Resources */,
+				62D41BC0DF4A4AE69C860CBC /* loopy.riv in Resources */,
+				D8FDAD17802D4A34AE1EC9A3 /* nested_menu.riv in Resources */,
+				818F29A6D49F4CB999128294 /* rainy.riv in Resources */,
+				BE73E9683E7D4CDEB9845293 /* rating.riv in Resources */,
+				8DFD2DBB50DB43EF8CD8ED43 /* runtime_nested_inputs.riv in Resources */,
+				A92163140F6045E3820510D4 /* skills_listener.riv in Resources */,
+				55DC91A45DBB40DD88869871 /* switch.riv in Resources */,
+				366DDBE82FB54D8FAD4F10E6 /* truck_v7.riv in Resources */,
+				533016F7CD874736BCDAC982 /* two_bone_ik.riv in Resources */,
+				EC1930C9ADEF46ADA7816CC6 /* ui_swipe_left_to_delete.riv in Resources */,
+				F7445A2DC62D4DDD8FE9545F /* v6_file.riv in Resources */,
+				0EEAAF32BBBE421695054D53 /* weather_app.riv in Resources */,
+				BDA141D81DFD1733C729C172 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00C6612366498D6BDC471487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-riveplayground/Pods-riveplayground-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiveRuntime/RiveRuntime.framework/RiveRuntime",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RiveRuntime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-riveplayground/Pods-riveplayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -296,6 +316,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		066DA9D27A2672F3F2DDB898 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-riveplayground/expo-configure-project.sh\"\n";
 		};
 		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -318,25 +357,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		3CF84CFE7BF8F2569403773E /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-riveplayground/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -378,26 +398,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-riveplayground/Pods-riveplayground-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB3A9107280016F50E82443F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-riveplayground/Pods-riveplayground-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiveRuntime/RiveRuntime.framework/RiveRuntime",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RiveRuntime.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-riveplayground/Pods-riveplayground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,7 +408,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				7634869EBF994D9FBA851F48 /* noop-file.swift in Sources */,
+				B4D14DFA89C549D59C12E4F8 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
