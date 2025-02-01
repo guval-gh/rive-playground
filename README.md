@@ -57,6 +57,17 @@ yarn android
 
 ## Helpers
 
+### Compatibility
+
+🚧🚧🚧🚧 Work In Progress 🚧🚧🚧🚧
+
+|       Solution       | iOS  (simulator) | iOS  Prod Build (device) | Android 🤖 (emulator) | Android 🤖 Prod Build (device) |
+| :------------------: | :---------------: | :-----------------------: | :-------------------: | :----------------------------: |
+| `expo-custom-assets` |        ✅         |           ⏳🧪            |          ✅           |              ⏳🧪              |
+| `resolveAssetSource` |        ✅         |           ⏳🧪            |          ✅           |              ⏳🧪              |
+
+🚧🚧🚧🚧 Work In Progress 🚧🚧🚧🚧
+
 ### Handle .RIV assets with `expo-custom-assets`
 
 To automatically load `.riv` files inside native folders without pass by `Xcode` and `Android Studio` then use `<Rive />` `resourceName` property to load assets from them.
