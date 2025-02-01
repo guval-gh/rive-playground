@@ -43,15 +43,10 @@ yarn android
 
 ## Environment
 
-- Expo: ~52.0.7
-- React Native: 0.76.2
+- Expo: ~52.0.28
+- React Native: 0.76.6
 - Yarn: 4.5.1
-- Rive: 8.1.0
-
-⚠️ `rive-react-native` version `8.1.0` seems to fix the folowing issue:
-
-- https://github.com/rive-app/rive-react-native/issues/272
-- https://github.com/rive-app/rive-react-native/issues/268
+- Rive: 8.3.0
 
 ## Feature watched
 
